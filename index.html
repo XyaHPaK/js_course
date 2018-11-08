@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    *{
+    text-align: center;  
+    }
+    input ~ input {
+        margin-top: 10px; 
+    }
+    #search{
+        margin-top: 10px; 
+    }
+    #ImgContainer{
+        margin-top: 10px;
+    }
+    .preloader{
+        display: none;
+        font-size: 20px;
+    }
+    .ImgContainer{
+        display: inline-block;
+    }
+</style>
+<body>
+    <div id="forms">
+        <input id = "word" type = "text" placeholder="Enter your word">
+        <br>
+        <input id = "width" type= "number" placeholder="Choose width to display">
+        <br>
+        <input id = "height" type = "number" placeholder="Choose height to display">
+        <br>
+        <button id = "search">Display Synonims</button>
+        <div id = "preloader" class="preloader">Loading...</div>
+    </div>
+    <div id = "ImgContainer"></div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
